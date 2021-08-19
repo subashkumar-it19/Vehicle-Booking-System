@@ -40,6 +40,14 @@
             <li class="nav-item">
               <a class="nav-link" href="contactus.html"><img src="logo3.jpeg" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp;&nbsp;&nbsp;Contact Us</a>
             </li>
+           <form class="d-flex justify-content-evenly">
+            <li class="nav-item">
+              <button class="btn btn-primary space-bt color-overide" type="button" data-bs-toggle="modal" data-bs-target="#reg"><i class="fa fa-plus space-bt-left"></i>SIGN IN </button>&nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-primary space-bt color-overide" type="button" data-bs-toggle="modal" data-bs-target="#log"><i class="fa fa-user space-bt-left"></i>SIGN UP</button>
+            </li>
+            </form>
             <li class="nav-item">
               <a class="nav-link" href="index.html">&nbsp;&nbsp;&nbsp;Logout</a>
             </li>
@@ -47,6 +55,76 @@
         </div>
       </div>
     </nav>
+
+    <section class="reg">
+      <div class="modal fade" id="reg" tabindex="-1" aria-labelledby="reg" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="reg">Registration</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                              <input type="email" class="form-control">
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control">
+
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Retype-Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-primary">Register</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="log">
+      <div class="modal fade" id="log" tabindex="-1" aria-labelledby="log" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="log">Registration</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control">
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+
+                      </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-primary">Login</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    
+    
+    
+
     <div class="p-3 mb-2 bg-secondary text-danger">  
     <div class="container my-5">
       <!-- Card -->
@@ -76,7 +154,7 @@
               <div class="card" style="width: 18rem;">
                   <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/41523/sonet-exterior-right-front-three-quarter-110.jpeg" class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title d-flex justify-content-center">20% Offer 🥳</h5>
+                      <h5 class="card-title d-flex justify-content-center">20% Offer 😍 </h5>
                   </div>
                   <ul class="list-group list-group-flush">
                     <a href="bookingpage.html" class="btn btn-outline-dark">Book Now</a>
@@ -122,5 +200,7 @@
     </ul>
 </footer>
 </div>
+  <script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
   </body>
 </html>
