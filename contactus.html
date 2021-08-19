@@ -15,29 +15,103 @@
   <body>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/Users/subashkumarn/Desktop/webtask/index.html">&nbsp;&nbsp;NSK Vehicle Booking</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html"><img src="logo1.png" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp;&nbsp;&nbsp;Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="bookingpage.html"><img src="logo2.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp;&nbsp;&nbsp;Booking page</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactus.html"><img src="logo3.jpeg" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp;&nbsp;&nbsp;Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">&nbsp;&nbsp;&nbsp;Logout</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="logo4.png" alt="content" width="80" height="64" class="d-inline-block align-text-top">&nbsp;&nbsp;NSK Vehicle Booking</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><img src="logo1.png" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp;&nbsp;&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bookingpage.html"><img src="logo2.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp;&nbsp;&nbsp;Booking page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html"><img src="logo3.jpeg" alt="" width="30" height="24" class="d-inline-block align-text-top">&nbsp;&nbsp;&nbsp;Contact Us</a>
+            </li>
+           <form class="d-flex justify-content-evenly">
+            <li class="nav-item">
+              <button class="btn btn-primary space-bt color-overide" type="button" data-bs-toggle="modal" data-bs-target="#reg"><i class="fa fa-plus space-bt-left"></i>SIGN IN </button>&nbsp;&nbsp;&nbsp;
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-primary space-bt color-overide" type="button" data-bs-toggle="modal" data-bs-target="#log"><i class="fa fa-user space-bt-left"></i>SIGN UP</button>
+            </li>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">&nbsp;&nbsp;&nbsp;Logout</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+
+    <section class="reg">
+      <div class="modal fade" id="reg" tabindex="-1" aria-labelledby="reg" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="reg">Registration</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                              <input type="email" class="form-control">
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control">
+
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Retype-Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-primary">Register</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="log">
+      <div class="modal fade" id="log" tabindex="-1" aria-labelledby="log" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="log">Registration</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                              <input type="email" class="form-control">
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+
+                      </form>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-primary">Login</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
       <div class="background">
         <div class="container">
